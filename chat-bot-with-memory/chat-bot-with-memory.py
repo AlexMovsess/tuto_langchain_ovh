@@ -37,8 +37,3 @@ question = "Do you know my name?"
 response = conversation.predict(input=question)
 print(f"👤: {question}")
 print(f"🤖: {response}")
-
-question = "What was my precedent question?"
-response = conversation.predict(input=question)
-print(f"👤: {question}")
-print(f"🤖: {response}")
