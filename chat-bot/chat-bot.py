@@ -1,3 +1,5 @@
+## Needs requirements1.txt
+
 import argparse
 
 from langchain_mistralai import ChatMistralAI
