@@ -8,13 +8,13 @@ from langchain.memory import ConversationBufferWindowMemory
 
 load_dotenv()
 
-ai_endpoint_token = os.getenv("_OVH_AI_ENDPOINTS_ACCESS_TOKEN")
-ai_endpoint_url = os.getenv("_OVH_AI_ENDPOINTS_URL")
+_OVH_AI_ENDPOINTS_ACCESS_TOKEN = os.getenv("OVH_AI_ENDPOINTS_ACCESS_TOKEN")
+_OVH_AI_ENDPOINTS_URL = os.getenv("OVH_AI_ENDPOINTS_URL")
 
 llm = ChatOpenAI(
     model_name="Mistral-7B-Instruct-v0.3",
-    openai_api_key=ai_endpoint_token,
-    openai_api_base=ai_endpoint_url,
+    openai_api_key=_OVH_AI_ENDPOINTS_ACCESS_TOKEN,
+    openai_api_base=_OVH_AI_ENDPOINTS_URL,
     max_tokens=512,
     temperature=0.0,
 )

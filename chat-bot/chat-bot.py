@@ -12,9 +12,9 @@ import time
 
 load_dotenv()
 
-_OVH_AI_ENDPOINTS_ACCESS_TOKEN = os.environ.get("_OVH_AI_ENDPOINTS_ACCESS_TOKEN")
-_OVH_AI_ENDPOINTS_MODEL_NAME = os.environ.get("_OVH_AI_ENDPOINTS_MODEL_NAME")
-_OVH_AI_ENDPOINTS_URL = os.environ.get("_OVH_AI_ENDPOINTS_URL")
+_OVH_AI_ENDPOINTS_ACCESS_TOKEN = os.environ.get("OVH_AI_ENDPOINTS_ACCESS_TOKEN")
+_OVH_AI_ENDPOINTS_MODEL_NAME = os.environ.get("OVH_AI_ENDPOINTS_MODEL_NAME")
+_OVH_AI_ENDPOINTS_URL = os.environ.get("OVH_AI_ENDPOINTS_URL")
 
 
 def chat_completion(question: str):
